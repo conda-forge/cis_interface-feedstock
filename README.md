@@ -19,7 +19,10 @@ modelers add communications interfaces to the model code
 and provide declarative specification files that identfy the
 models that should be run and the inputs and outputs those models
 expect. The CiS framework uses this information to launch the models
-on parallel processes and orchestrate communication between them.
+on parallel processes and orchestrate communication between them. NOTE:
+Following this release, the cis_interface package will be renamed to
+yggdrasil. This release and its accompanying docs will be maintained
+under the name cis_interface, but will not receive future updates.
 
 
 Current build status
