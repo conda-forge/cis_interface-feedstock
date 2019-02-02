@@ -1,5 +1,5 @@
 {% set name = "cis_interface" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -56,7 +56,7 @@ test:
     - cistest --nologcapture -svx
 
 about:
-  home: https://github.com/cropsinsilico/cis_interface
+  home: https://github.com/cropsinsilico/yggdrasil
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -71,7 +71,7 @@ about:
     expect. The CiS framework uses this information to launch the models 
     on parallel processes and orchestrate communication between them.
   doc_url: https://cropsinsilico.github.io/cis_interface
-  dev_url: https://github.com/cropsinsilico/cis_interface
+  dev_url: https://github.com/cropsinsilico/yggdrasil
 
 extra:
   recipe-maintainers:
