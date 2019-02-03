@@ -1,5 +1,5 @@
 {% set name = "cis_interface" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d6a283473198468c76ab98ecced78b94d32f9fc40cedac14194ff6ffb4700dfb
+  sha256: 2e0870513666311b30615b59d14c25fdcf0fff9dc4da0e7f50203ddb10963127
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
   skip: true  # [win and vc<14]
 
