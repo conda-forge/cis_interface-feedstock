@@ -10,13 +10,14 @@ source:
   sha256: d6a283473198468c76ab98ecced78b94d32f9fc40cedac14194ff6ffb4700dfb
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
   skip: true  # [win and vc<14]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - czmq
     - pip
@@ -48,6 +49,7 @@ test:
     - cis_interface
   requires:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - astropy
     - nose
     - pika
