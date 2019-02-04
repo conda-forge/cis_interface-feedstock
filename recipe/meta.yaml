@@ -1,5 +1,5 @@
 {% set name = "cis_interface" %}
-{% set version = "0.7.6" %}
+{% set version = "0.7.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1c8bd15ce640a2619a5c7ef20d301153d1845fafaeb8b3e062326fc8751dbdd4
+  sha256: 381e5e43da898f13c10ec018bf04d229331aa21aa5e2108af6223079996cae84
 
 build:
   number: 0
@@ -47,16 +47,6 @@ requirements:
 test:
   imports:
     - cis_interface
-  requires:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - astropy
-    - nose
-    - pika
-    - cmake
-    - valgrind  # [unix]
-  commands:
-    - cistest --nologcapture -svx
 
 about:
   home: https://github.com/cropsinsilico/yggdrasil
