@@ -5,7 +5,7 @@
 About cis_interface
 ===================
 
-Home: https://github.com/cropsinsilico/yggdrasil
+Home: https://github.com/cropsinsilico/yggdrasil/tree/cis_interface
 
 Package license: BSD-3-Clause
 
@@ -13,16 +13,15 @@ Feedstock license: BSD 3-Clause
 
 Summary: A framework for connecting computational models from multiple languages.
 
-The CiS framework provides support for connecting scientific models
-written in different programming languages. To connect two models,
-modelers add communications interfaces to the model code
+The Crops in Silico (CiS) framework, cis_interface, provides support for
+connecting scientific models written in different programming languages.
+To connect two models, modelers add communications interfaces to the model code
 and provide declarative specification files that identfy the
 models that should be run and the inputs and outputs those models
-expect. The CiS framework uses this information to launch the models
-on parallel processes and orchestrate communication between them. NOTE:
-Following this release, the cis_interface package will be renamed to
-yggdrasil. This release and its accompanying docs will be maintained
-under the name cis_interface, but will not receive future updates.
+expect. cis_interface uses this information to launch the models
+on parallel processes and orchestrate asynchronous communication between them.
+Although designed for connecting crop models, cis_interface can be used to
+connect scientific models from any domain.
 
 
 Current build status
