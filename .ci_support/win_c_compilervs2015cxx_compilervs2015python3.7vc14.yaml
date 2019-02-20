@@ -4,6 +4,8 @@ channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
+cxx_compiler:
+- vs2015
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -13,7 +15,7 @@ pin_run_as_build:
   zeromq:
     max_pin: x.x
 python:
-- '3.5'
+- '3.7'
 vc:
 - '14'
 zeromq:
@@ -22,3 +24,4 @@ zip_keys:
 - - python
   - vc
   - c_compiler
+  - cxx_compiler

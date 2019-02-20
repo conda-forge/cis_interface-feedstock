@@ -1,7 +1,11 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About cis_interface
 ===================
 
-Home: https://github.com/cropsinsilico/cis_interface
+Home: https://github.com/cropsinsilico/yggdrasil/tree/cis_interface
 
 Package license: BSD-3-Clause
 
@@ -9,13 +13,15 @@ Feedstock license: BSD 3-Clause
 
 Summary: A framework for connecting computational models from multiple languages.
 
-The CiS framework provides support for connecting scientific models
-written in different programming languages. To connect two models,
-modelers add communications interfaces to the model code
+The Crops in Silico (CiS) framework, cis_interface, provides support for
+connecting scientific models written in different programming languages.
+To connect two models, modelers add communications interfaces to the model code
 and provide declarative specification files that identfy the
 models that should be run and the inputs and outputs those models
-expect. The CiS framework uses this information to launch the models
-on parallel processes and orchestrate communication between them.
+expect. cis_interface uses this information to launch the models
+on parallel processes and orchestrate asynchronous communication between them.
+Although designed for connecting crop models, cis_interface can be used to
+connect scientific models from any domain.
 
 
 Current build status
@@ -23,7 +29,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/cis_interface-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cis_interface-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/cis_interface-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cis_interface-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cis_interface-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cis-interface-feedstock/branch/master)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cis-interface-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cis-interface-feedstock/branch/master)
 
 Current release info
 ====================
@@ -56,6 +62,8 @@ conda search cis_interface --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -111,3 +119,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@langmm](https://github.com/langmm/)
+
